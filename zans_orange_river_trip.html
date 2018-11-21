@@ -48,12 +48,13 @@
 			}
 			logo.addTo(map);
          // Creating a marker
-         var day1 = L.marker([-33.9299240,18.8659210]).addTo(map).bindPopup("Day 1");;
-         var day2 = L.marker([-33.9300900,18.8654460]).addTo(map).bindPopup("End of trip.");;
-	 var day3 = L.marker([-33.9300750,18.8644650]).addTo(map).bindPopup("End of trip.");;     
+         var start = L.marker([-30.052273,28.608662]).addTo(map).bindPopup("Start");
 	      
-         var scale = L.control.scale();
-			scale.addTo(map);
+	      
+	 var end = L.marker([-33.9300750,18.8644650]).addTo(map).bindPopup("End");    
+	      
+        var scale = L.control.scale();
+	scale.addTo(map);
       </script>
    </body>
    
