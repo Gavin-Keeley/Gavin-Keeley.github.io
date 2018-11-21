@@ -1,31 +1,17 @@
-
-
 <!DOCTYPE html>
 <html>
    <head>
-	   <style>
-			body{height: 100%; width: 100%; margin: 0;overflow:hidden;}
-			html{height: 100%; width: 100%; margin: 0;}
-			.center {
-				margin: auto;
-				width: 98%;
-				height: 98%;
-				border: 4px solid #257CD4;
-				padding: 0px;
-			}
-
-		</style>
       <title>Leaflet sample</title>
       <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
       <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
    </head>
    
    <body>
-      <div id = "map" style = "center"></div>
+      <div id = "map" style = "width:900px; height:580px"></div>
       <script>
          // Creating map options
          var mapOptions = {
-            center: [-33.9299240,18.8659210],
+            center: [17.385044, 78.486671],
             zoom: 10
          }
          // Creating a map object
@@ -37,15 +23,8 @@
          // Adding layer to the map
          map.addLayer(layer);
          
-	 var logo = L.control({position: 'topright'});
-			logo.onAdd = function(map){
-				var div = L.DomUtil.create('div', 'myclass');
-				div.innerHTML= "<img src='or.png'/>";
-				return div;
-			}
-			logo.addTo(map);
          // Creating a marker
-         var marker = L.marker([-33.9299240,18.8659210]);
+         var marker = L.marker([17.385044, 78.486671]);
          
          // Adding marker to the map
          marker.addTo(map);
