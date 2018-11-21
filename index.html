@@ -39,6 +39,13 @@
 					'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
 				}).addTo(mymap);
 
+			var logo = L.control({position: 'topright'});
+			logo.onAdd = function(mymap){
+				var div = L.DomUtil.create('div', 'myclass');
+				div.innerHTML= "<img src='logo.png'/>";
+				return div;
+			}
+			logo.addTo(mymap);
 			
 			var startMarker = L.marker([-33.9299240,18.8659210]);
 			var endMarker = L.marker([-33.9290560,18.8632290]);
