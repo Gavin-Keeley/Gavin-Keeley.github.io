@@ -28,8 +28,8 @@
       <script>
          // Creating map options
          var mapOptions = {
-            center: [-29.202350, 22.187969],
-            zoom: 5
+            center: [-29.892707, 23.195082],
+            zoom: 7
          }
          // Creating a map object
          var map = new L.map('map', mapOptions);
@@ -43,7 +43,7 @@
          var logo = L.control({position: 'topright'});
 			logo.onAdd = function(map){
 				var div = L.DomUtil.create('div', 'myclass');
-				div.innerHTML= "<img src='progress1.png'/>";
+				div.innerHTML= "<img src='heading.png'/>";
 				return div;
 			}
 			logo.addTo(map);
